@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeFlow | Blood Bank Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-droplet icon-red"></i>
+                <span>Life<span class="text-red">Flow</span></span>
+            </div>
+            <nav class="navbar">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#search">Find Blood</a>
+                <a href="#process">Donation Process</a>
+                <a href="#campaigns">Campaigns</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#donate-now" class="btn btn-primary">Donate Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Save Lives Today</span>
+                <h1>Your Drop of Blood Can Create a <span class="text-red">Ocean of Hope</span></h1>
+                <p>LifeFlow connects blood donors with patients in real-time. Join our network of heroes today and help bridge the gap between supply and demand.</p>
+                <div class="hero-buttons">
+                    <a href="#search" class="btn btn-primary">Find a Donor</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image-placeholder">
+                <div class="art-card main-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>12,450+</h3>
+                    <p>Active Donors Online</p>
+                </div>
+                <div class="art-card sub-card">
+                    <i class="fa-solid fa-hospital"></i>
+                    <h3>580+</h3>
+                    <p>Partner Hospitals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <div class="container">
+            <div class="search-panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-magnifying-glass"></i> Quick Blood Search</h2>
+                    <p>Find available blood stock or eligible donors in your vicinity immediately.</p>
+                </div>
+                <form class="search-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label>Blood Group</label>
+                        <select>
+                            <option>Select Blood Type</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Your Location</label>
+                        <input type="text" placeholder="City or Zip Code">
+                    </div>
+                    <div class="form-group">
+                        <label>Urgency Level</label>
+                        <select>
+                            <option>Standard (Within 24hrs)</option>
+                            <option>Critical (Immediate)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary search-btn">Search Availability</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-metrics">
+                <div class="metric-box">
+                    <h3>25k+</h3>
+                    <p>Successful Deliveries</p>
+                </div>
+                <div class="metric-box">
+                    <h3>15min</h3>
+                    <p>Avg Response Time</p>
+                </div>
+                <div class="metric-box">
+                    <h3>100%</h3>
+                    <p>Safe & Certified</p>
+                </div>
+                <div class="metric-box">
+                    <h3>24/7</h3>
+                    <p>Emergency Support</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Who We Are & What We Do</h2>
+                <p>LifeFlow is a state-of-the-art decentralized blood management platform designed to eliminate blood shortages. We streamline everything from storage optimization to donor mobilization via cutting-edge web infrastructure.</p>
+                <p>Our mission is simple: to make sure no medical emergency fails due to the unavailability of safe, verified blood inventory.</p>
+                <ul class="about-list">
+                    <li><i class="fa-solid fa-check-circle"></i> Real-time inventory synchronization</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Seamless hospital-to-bank API pipelines</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Strictly monitored temperature control networks</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>How The Donation Process Works</h2>
+                <p>Giving blood is safe, simple, and takes less than an hour of your time.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <h3>Registration</h3>
+                    <p>Fill out a basic medical questionnaire and verification process at our counter or online portal.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <h3>Mini-Physical</h3>
+                    <p>A quick check of your pulse, blood pressure, body temperature, and hemoglobin levels to ensure safety.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <h3>The Donation</h3>
+                    <p>The actual blood draw takes only about 8-10 minutes under highly sterile conditions overseen by professionals.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">04</div>
+                    <h3>Refreshment</h3>
+                    <p>Enjoy a brief snack and drinks in our recovery lounge to restore your hydration levels before you leave.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stock-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Live National Blood Bank Status</h2>
+                <p>Real-time overview of critical blood groups across central processing facilities.</p>
+            </div>
+            <div class="stock-grid">
+                <div class="stock-card critical">
+                    <span class="stock-label">A+</span>
+                    <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
+                    <p>Status: <span class="status-text">Critical (35%)</span></p>
+                </div>
+                <div class="stock-card stable">
+                    <span class="stock-label">B+</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    <p>Status: <span class="status-text">Stable (85%)</span></p>
+                </div>
+                <div class="stock-card critical">
+                    <span class="stock-label">O-</span>
+                    <div class="progress-bar"><div class="progress" style="width: 15%;"></div></div>
+                    <p>Status: <span class="status-text">Very Low (15%)</span></p>
+                </div>
+                <div class="stock-card stable">
+                    <span class="stock-label">AB+</span>
+                    <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                    <p>Status: <span class="status-text">Stable (70%)</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="campaigns" class="campaign-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Active Camps & Donation Drives</h2>
+                <p>Join a local campaign happening in your community today.</p>
+            </div>
+            <div class="campaign-grid">
+                <div class="campaign-card">
+                    <div class="camp-date"><strong>12</strong> July</div>
+                    <div class="camp-info">
+                        <h3>Metro Central Donation Drive</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> City Convention Center, Hall B</p>
+                        <p><i class="fa-solid fa-clock"></i> 09:00 AM - 05:00 PM</p>
+                    </div>
+                </div>
+                <div class="campaign-card">
+                    <div class="camp-date"><strong>18</strong> July</div>
+                    <div class="camp-info">
+                        <h3>Corporate Blood Donation Fest</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Tech Park Alpha, Ground Floor</p>
+                        <p><i class="fa-solid fa-clock"></i> 10:00 AM - 04:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Words From the Community</h2>
+                <p>Real stories of patients who found hope and donors who made it happen.</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <p class="quote">"During an emergency surgery last month, we desperately needed O-negative blood. Thanks to LifeFlow's matching system, a donor arrived at the hospital within 35 minutes."</p>
+                    <div class="user-info">
+                        <strong>Sarah Jenkins</strong>
+                        <span>Recipient Family</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">"I track my donation timeline through their platform. It feels amazing to know exactly when and where my blood unit gets utilized to save a human life."</p>
+                    <div class="user-info">
+                        <strong>David Vance</strong>
+                        <span>Regular Donor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col description-col">
+                <div class="logo footer-logo">
+                    <i class="fa-solid fa-droplet icon-red"></i>
+                    <span>Life<span class="text-red">Flow</span></span>
+                </div>
+                <p class="footer-desc">
+                    LifeFlow is a certified global network coordinating blood reserves securely. We leverage modern systems to save lives by bridging communities.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home Dashboard</a></li>
+                    <li><a href="#about">About Our Mission</a></li>
+                    <li><a href="#search">Find Live Inventory</a></li>
+                    <li><a href="#process">Eligibility Check</a></li>
+                    <li><a href="#campaigns">Active Camps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col links-col">
+                <h3>Support & Resources</h3>
+                <ul>
+                    <li><a href="#">Donor Guidelines</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Hospital Partnerships</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col address-col">
+                <h3>Central Headquarters</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 450 Health Avenue, Medical District, Suite 100, New York, NY 10016</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 234-5678</p>
+                <p><i class="fa-solid fa-envelope"></i> emergency@lifeflow.org</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 LifeFlow Blood Bank System. All Rights Reserved.</p>
+                <p>Designed for excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
